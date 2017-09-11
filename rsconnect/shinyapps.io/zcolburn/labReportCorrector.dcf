@@ -1,0 +1,12 @@
+name: labReportCorrector
+title: labReportCorrector
+username:
+account: zcolburn
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 213245
+bundleId: 975792
+url: https://zcolburn.shinyapps.io/labReportCorrector/
+when: 1505094619.7626
+asMultiple: FALSE
+asStatic: FALSE

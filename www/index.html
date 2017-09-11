@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="shared/jquery.js" type="text/javascript"></script>
+    <script src="shared/shiny.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <script src="shiny.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <p class="topHeader">Lab Report Corrector</p>
+
+
+
+      <div class="tabsDiv">
+        <div id="navDiv">
+          <ul class="topnav" id="myTopnav">
+            <li id="navTabInputButton"><a>Input</a></li>
+            <li id="navTabAboutButton"><a>About</a></li>
+            <li class="icon">
+              <a href="javascript:void(0);" onclick="toggleNavbar()">&#9776;</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div id="inputTab" class="inputTab mainTabs">
+          <p class="sectionLabel col-xs-12">
+            Input
+          </p>
+          <div class="col-xs-6 inputField">
+            <p class="inputOutputHeader">
+              Your text
+            </p>
+            <textarea name="inputFieldText" id="inputField" class="col-xs-12 fields"></textarea>
+          </div>
+          <div class="col-xs-6 outputField">
+            <p class="inputOutputHeader">
+              Proofread text
+            </p>
+            <pre id="outputField" class="shiny-html-output fields col-xs-12"></pre>
+          </div>
+          <p class="sectionLabel col-xs-12">
+            Suggestions
+          </p>
+          <p class="sectionLabel issueTabHeader col-xs-12">
+            This is what I suggest:
+          </p>
+          <div class="col-xs-12 issueField">
+            <pre id="issueField" class="shiny-html-output fields col-xs-12"><span></span></pre>
+          </div>
+        </div>
+
+
+        <div id="aboutTab" class="aboutTab mainTabs">
+          <br>
+          <p>This R Shiny Web App was created to help students identify common issues found in lab reports in real-time. In particular, it was created to analyze microbiology and molecular biology lab reports. Source code can be found at the App's <a href="https://github.com/zcolburn/Lab-Report-Corrector_Shiny-App/blob/master/README.md" target="_blank">GitHub repository</a>.</p>
+        </div>
+      </div>
+
+
+
+      <footer id="footer" class="text-center extraFooterStyling col-xs-12" style="background-color: transparent">
+        <a href="https://www.linkedin.com/in/zacharycolburn/" target="_blank">Zach Colburn, 2017</a>
+      </footer>
+    </div>
+
+
+  </body>
+</html>
