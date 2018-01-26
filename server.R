@@ -37,8 +37,6 @@ shinyServer(function(session, input, output) {
   renderUI({getPage(includeHTML("www/index.html"))})
   
   
-  
-  
   # Input tab 
   #-------------------------------------
   # Set empty objects that will be modified pending input
@@ -49,7 +47,7 @@ shinyServer(function(session, input, output) {
   processedInputText <- list()
   currentInput <- ""
   
-  # Function to set input data when user enters text in input field
+  # Function to set input data when the user enters text in input field
   getInput <- reactive({
     input$inputField
   })
